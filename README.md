@@ -1,5 +1,5 @@
 # TypeFlask
-Starter web template for SaaS projects
+Starter web template for SaaS projects, utilizing HTML, CSS, JINJA, and FLASK
 
 ---
 
