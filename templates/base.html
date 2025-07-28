@@ -3,7 +3,7 @@
 	<head>
 
 		<!-- INSERT METADATA FOR SEO -->
-		<title>{% block title %}STARTENANT | Affordable Tenant Screening{% endblock %}</title>
+		<title>{% block title %}TYPEFLASK | SaaS website template.{% endblock %}</title>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <!-- CSS -->
@@ -18,8 +18,9 @@
 		{% block nav %}
 			<nav class="navbar navbar-expand-lg bg-body-light">
 			  <div class="container py-4">
-			  	<img src="{{ url_for('static', filename='img/logo.png') }}" alt="Striker Logo" class="navbar-brand-logo bg-primary rounded-2" width="40" height="40">
-			    <a class="navbar-brand ps-3 fw-bolder" href="#">STRIKER</a>
+
+			  	<span alt="TypeFlask Logo" class="d-inline-flex align-items-center justify-content-center navbar-brand-logo bg-primary rounded-2 fw-bolder" style="width: 3.5rem; height: 3.5rem;">TF</span>
+			    <a class="navbar-brand ps-3 fw-bolder" href="#">TYPEFLASK</a>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 			    </button>
@@ -33,10 +34,15 @@
 			        </li>
 			      </ul>
 
-<!-- 				  <form class="d-flex container-fluid justify-content-end align-items-center">
+<!-- 				  INSERT GITHUB BTN HERE -->
+
+<form class="d-flex container-fluid justify-content-end align-items-center">
+	<iframe src="https://ghbtns.com/github-btn.html?user=dickwalker&repo=typeflask&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+	<!--
 				    <button class="btn btn-light me-2" type="button">Login</button>
 				    <button class="btn btn-dark" type="button">Sign Up</button>
-				  </form> -->
+	-->
+				  </form>
 
 			    </div>
 			  </div>
@@ -51,9 +57,13 @@
 				<div class="row">
 					<div class="col-lg-4 mb-4 mb-lg-0">
 						<div class="d-flex align-items-center">
+						  	<span alt="TypeFlask Logo" class="d-inline-flex text-dark align-items-center justify-content-center navbar-brand-logo bg-primary rounded-2 fw-bolder" style="width: 3.5rem; height: 3.5rem;">TF</span>
+							<a class="navbar-brand ps-3 fs-3 fw-bolder" href="#">TYPEFLASK</a>
+							<!--
 					  	<img src="{{ url_for('static', filename='img/logo.png') }}" alt="Striker Logo" class="navbar-brand-logo bg-primary rounded-2" width="50" height="50">
 					    <a class="navbar-brand ps-3 fs-3 fw-bolder" href="#">STRIKER</a>
-		                </div>
+		                </div> -->
+		            	</div>
 		                <p class="my-3 fs-5">A company that offers a scalable foundation for SaaS applications, complete with optimized a frontend architecture to help you launch faster and scale smarter.</p>
 		                <div class="d-flex gap-3 mt-4">
 		                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
