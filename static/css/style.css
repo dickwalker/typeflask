@@ -1,0 +1,43 @@
+:root {
+  --bs-primary: #9067C6; /* Your desired primary color */
+}
+
+.bg-primary {
+	background-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+	color: var(--bs-primary) !important;
+}
+
+.bg-hero {
+	background-image: url('/static/img/vect_bg_pattern.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.tech-scroller-wrapper {
+  height: 150px; /* Fixed height for consistency */
+}
+
+.tech-scroller {
+  width: 100%;
+}
+
+.tech-scroller-inner {
+  animation: scroll 30s linear infinite;
+}
+
+.tech-logo {
+  height: 120px; /* Control logo size */
+  width: auto;
+}
+
+.tech-logo:hover {
+	filter: grayscale(0%) brightness(1);
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); } /* Matches duplicated content */
+}
