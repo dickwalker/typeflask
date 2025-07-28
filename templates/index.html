@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="py-5">
+	<div class="container py-5">
+		<div class="row">
+			
+			<div class="d-flex justify-content-center">
+			    <span class="badge bg-light text-secondary rounded-pill px-3 py-2 d-inline-flex align-items-center border border-secondary-subtle fs-6">
+			        <span class="dot bg-primary me-2" style="width: 8px; height: 8px; border-radius: 50%; display: inline-block;"></span>
+			    	Version: 0.1 Pre-release
+			    </span>
+			</div>
+			
+			<h1 class="text-center pt-1 pb-3 fw-bolder display-1">Launch software applications faster than ever</h1>
+			<p class="text-center fs-3 text-secondary">A web template designed to help solo-entrepreneurs & businesses deploy software applicaitons on the web. It serves various purposes related to speed, flexability, and ease of use.</p>
+			<div class="text-center p-5">
+	    		<button class="btn btn-lg btn-dark px-5 py-3">Get Started</button>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- TECHNOLOGY SECTION -->
+<section class="py-5 bg-black text-white">
+	<div class="container py-5">
+		<div class="row">
+
+			<div class="col-lg-6 mb-4 mb-lg-0">
+				<h2 class="fw-bolder mb-4">Built with the latest technologies</h2>
+				<p class="fs-5 text-white">Our template is built with the latest web technologies, ensuring that your applications are fast, responsive, and scalable. We use modern frameworks and libraries to provide a solid foundation for your projects.</p>
+			</div>
+			
+			<div class="col-lg-6">
+				<!-- Scrolling Logos Container -->
+				<div class="tech-scroller-wrapper position-relative overflow-hidden" style="height: 150px;">
+		          <div class="tech-scroller h-100 d-flex align-items-center">
+		            <!-- Duplicate logos for seamless looping -->
+		            <div class="tech-scroller-inner d-flex align-items-center">
+		              {% for i in range(2) %}  <!-- Duplicate for smooth loop -->
+		              <img src="{{ url_for('static', filename='img/logo-bootstrap.svg') }}" alt="Bootstrap" class="tech-logo mx-4">
+		              <!-- <img src="{{ url_for('static', filename='img/logo-flask.svg') }}" alt="Flask" class="tech-logo mx-4"> -->
+		              <img src="{{ url_for('static', filename='img/logo-js.svg') }}" alt="Javascript" class="tech-logo mx-4">
+		              <img src="{{ url_for('static', filename='img/logo-css.svg') }}" alt="CSS" class="tech-logo mx-4">
+		              <img src="{{ url_for('static', filename='img/logo-html.svg') }}" alt="HTML" class="tech-logo mx-4">
+		              {% endfor %}
+		            </div>
+		          </div>
+		        </div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="bg-white">
+	<div class="container py-5">
+		<div class="row py-5">
+			<div class="col-md-7">
+				<h2 class="text-center fw-bolder py-5 px-2 display-2">Stunning Visuals, No Graphics Required</h2>
+			</div>
+			<div class="col-md-5 fs-4">
+
+            	<p>Achieve professional aesthetics using only typography and smart layout design—no custom images, icons, or complex assets needed.</p>
+              	<p><span class="fw-semibold">Design Freedom:</span> Built with Bootstrap’s refined components and CSS variables for effortless customization.</p>
+        
+			</div>
+		</div>
+		<div class="row py-5">
+
+			<div class="col-md-5 fs-4">
+            	<p>MIT-licensed Flask foundation with pre-configured authentication, database models, and API-ready structure.</p>
+              	<p><span class="fw-semibold">Developer-Ready:</span> Includes Jinja2 templating, SQLAlchemy integration, and production-grade error handling.</p>
+			</div>
+			<div class="col-md-7">
+				<h2 class="text-center fw-bolder py-5 px-2 display-2">Open-Source Flask Starter with Elegance</h2>
+			</div>
+
+		</div>
+
+		<div class="row py-5">
+			<div class="col-md-7">
+				<h2 class="text-center fw-bolder py-5 px-2 display-2">Help Us Improve - Your Support Matters</h2>
+			</div>
+			<div class="col-md-5 fs-4">
+
+            	<p>Your donations fund critical updates, security patches, and new features for the entire community.</p>
+              	<p><span class="fw-semibold">Sustainable Development:</span> Every contribution ensures this template stays free and well-maintained.</p>
+        
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- FEATURE SECTION -->
+<section class="bg-light">
+	<div class="container py-5">
+		<div class="row my-5">
+			<h2 class="text-center fw-bolder py-5 display-2">Features that save time and improve workflow</h2>
+
+			<div class="col-sm-4 mb-3 mb-sm-0">
+				<div class="card">
+				  <div class="card-body">
+					<div class="text-center py-4">
+						<i class="bi bi-stack d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle fs-4" 
+						style="width: 3.5rem; height: 3.5rem;"></i>
+					</div>
+				    <h3 class="card-title fw-bold text-center">Flask Essentials</h3>
+				    <p class="card-text fs-4 text-center py-3">A production-ready landing page. Pre-configured for rapid development. </p>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 mb-3 mb-sm-5">
+				<div class="card">
+				  <div class="card-body">
+					<div class="text-center py-4">
+						  <i class="bi bi-body-text d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle fs-4" 
+						     style="width: 3.5rem; height: 3.5rem;"></i>
+					</div>
+				    <h3 class="card-title fw-bold text-center">Typography</h3>
+				    <p class="card-text fs-4 text-center py-3">Beautiful, responsive typography with perfect vertical rhythm for professional content presentation.</p>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 mb-3 mb-sm-0">
+				<div class="card">
+				  <div class="card-body">
+					<div class="text-center py-4">
+						<i class="bi bi-code-slash d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle fs-4" 
+						style="width: 3.5rem; height: 3.5rem;"></i>
+					</div>
+				    <h3 class="card-title fw-bold text-center">Lightweight</h3>
+				    <p class="card-text fs-4 text-center py-3">Minimal dependencies and optimized assets ensure fast load times.</p>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 mb-3 mb-sm-0">
+				<div class="card">
+				  <div class="card-body">
+					<div class="text-center py-4">
+						<i class="bi bi-phone d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle fs-4" 
+						style="width: 3.5rem; height: 3.5rem;"></i>
+					</div>
+				    <h3 class="card-title fw-bold text-center">Responsive</h3>
+				    <p class="card-text fs-4 text-center py-3">Perfectly adapted layout for all devices, from mobile to desktop, with Bootstrap's proven grid.</p>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 mb-3 mb-sm-5">
+				<div class="card">
+				  <div class="card-body">
+					<div class="text-center py-4">
+						  <i class="bi bi-bootstrap-fill d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle fs-4" 
+						     style="width: 3.5rem; height: 3.5rem;"></i>
+					</div>
+				    <h3 class="card-title fw-bold text-center">Bootstrap</h3>
+				    <p class="card-text fs-4 text-center py-3">Modern UI components and utilities built with Bootstrap 5 for consistent, professional interfaces.</p>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 mb-3 mb-sm-0">
+				<div class="card">
+				  <div class="card-body">
+					<div class="text-center py-4">
+						<i class="bi bi-github d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle fs-4" 
+						style="width: 3.5rem; height: 3.5rem;"></i>
+					</div>
+				    <h3 class="card-title fw-bold text-center">Free to Use</h3>
+				    <p class="card-text fs-4 text-center py-3">Open-source MIT licensed template that's free for personal and commercial projects.</p>
+				  </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+
+<!-- CALL TO ACTION SECTION -->
+<section class="py-5 bg-primary text-white">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="mb-4 display-2 fw-bolder">Start developing now!</h2>
+                <p class="lead mb-5 fs-3 fw-medium">Future projects are just a download away. Get the Striker template and launch faster, taking the guess work out of the front-end development.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#" class="btn btn-dark btn-lg px-5 py-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
