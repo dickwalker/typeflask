@@ -41,3 +41,7 @@
 	0% { transform: translateX(0); }
 	100% { transform: translateX(-50%); } /* Matches duplicated content */
 }
+
+.no-wrap {
+	white-space: nowrap;
+}
