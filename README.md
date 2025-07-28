@@ -36,12 +36,13 @@ cd typeflask
 
 ### 4. Create & Configure .env file
 
+```code
 FLASK_APP=__init__.py
+```
 
 ### 5. Install Dependencies
 
 ```bash
-. .venv
 pip install -r requirements.txt
 ```
 
